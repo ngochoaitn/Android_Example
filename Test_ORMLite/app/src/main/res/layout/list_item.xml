@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:padding="10px"
+                android:paddingBottom="20px"
+                android:background="#FFFFFF"
+                android:clickable="true"
+                android:onClick="itemMonAn_Click">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll1">
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:src="@mipmap/no_image"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_marginRight="10px"
+        android:layout_marginBottom="10px"
+        android:id="@+id/ivHinhAnh">
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Tên món ăn"
+            android:paddingBottom="10px"
+            android:paddingTop="10px"
+            android:id="@+id/lblTenMonAn"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblTenMonAn"
+            android:textSize="10sp"
+            android:text="0 nguyên liệu"
+            android:id="@+id/lblSoLuongNguyenLieu"/>
+
+    </RelativeLayout>
+    </LinearLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="200px"
+        android:text="Mô tả\nMô tả\nMô tả\nMô tả\nMô tả\nMô tả\n"
+        android:layout_below="@id/ll1"
+        android:paddingBottom="10px"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:id="@+id/lblMoTa"/>
+
+        <GridLayout
+            android:layout_below="@id/lblMoTa"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="18"
+            android:layout_column="0"
+            android:gravity="bottom|left"
+            android:textSize="10sp"
+            android:background="#d6d6dc"
+            android:paddingTop="1px"
+            android:rowCount="1"
+            android:columnCount="2">
+            <TextView
+                android:layout_column="0"
+                android:layout_row="0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mức độ: "
+                android:textColor="#07a19e"
+                android:background="#ffffff"
+                android:id="@+id/lblMucDo"/>
+            <TextView
+                android:layout_column="0"
+                android:layout_row="0"
+                android:layout_gravity="right|bottom"
+                android:text="..."
+                android:clickable="true"
+                android:onClick="lblTuyChon_Click"/>
+        </GridLayout>
+    </GridLayout>
+</RelativeLayout>

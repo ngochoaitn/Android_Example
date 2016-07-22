@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorBar"
+        android:titleTextColor="@color/colorTextOnBar"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lo_sv1">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.AcChiTietMonAn"
+    android:scrollbars="horizontal|vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5px"
+        android:id="@+id/lo_rl1">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:background="@android:color/holo_blue_light"
+            android:id="@+id/ivHinhAnh"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:onClick="ivHinhAnh_Click"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chưa có ảnh"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="60dp"
+            android:id="@+id/lblChuaCoHinhAnh"/>
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10px"
+        android:layout_below="@id/lo_rl1"
+        android:id="@+id/lo_tbl1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên món ăn:"
+            android:id="@id/lblTenMonAn"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhập vào tên món ăn"
+            android:paddingBottom="30px"
+            android:textStyle="bold"
+            android:id="@+id/inputTenMonAn"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mức độ:"
+            android:id="@id/lblTenMonAn"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblTenMonAn"
+            android:paddingBottom="30px"
+            android:id="@+id/inputMucDo"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mô tả:"
+            android:id="@id/lblTenMonAn"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30px"
+            android:layout_below="@id/lblMucDo"
+            android:id="@+id/inputMoTa"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nguyên liệu:"
+            android:id="@id/lblTenMonAn"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:paddingBottom="30px"
+            android:layout_below="@id/lblMoTa"
+            android:id="@+id/inputNguyenLieu"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cách làm:"
+            android:id="@id/lblTenMonAn"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mô tả cách làm"
+            android:layout_below="@id/lblNguyenLieu"
+            android:paddingBottom="30px"
+            android:id="@+id/inputCachLam"/>
+    </TableLayout>
+</RelativeLayout>
+</ScrollView>
+</LinearLayout>

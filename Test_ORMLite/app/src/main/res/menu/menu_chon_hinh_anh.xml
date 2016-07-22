@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.example.ohia.test_ormlite.activitys.AcModifyMonAn">
+    <item
+        android:id="@+id/btnChonHinhTuBoSuuTap"
+        android:title="Chọn từ bộ sưu tập"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:onClick="btnChonHinhTuBoSuuTap_Click"/>
+    <item
+        android:id="@+id/btnChonHinhTuCamera"
+        android:title="Chụp ảnh"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:onClick="btnChonHinhTuCamera_Click"/>
+    <item
+        android:id="@+id/btnXoaAnh"
+        android:title="Xóa ảnh"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:onClick="btnXoaAnh_Click"/>
+</menu>
